@@ -1,59 +1,44 @@
 #include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include <conio.h>
 
 int main(){
 	
-	char vertinvert[15];
-	char tipo[15];
-	char classe[15];
+	char pal1[30],pal2[30],pal3[30],animal[30];
 	
-	printf("Escreva se eh vertebrado ou invertebrado: ");
-	scanf("%s", vertinvert);
+	scanf("%s", &pal1);
+	scanf("%s", &pal2);
+	scanf("%s", &pal3);
+
 	
-	printf("\nEscreva o tipo(ave,mamifero,inseto,anelideo): ");
-	scanf("%s", tipo);
-	
-	printf("\nEscreva a classe(carnivoro,herbivoro,onivoro,hematofago): \n\n");
-	scanf("%s", classe);
-	
-	if(strcmp(vertinvert,"vertebrado")==0){
-		if(strcmp(tipo,"ave") == 0){
-			if(strcmp(classe,"carnivoro") == 0){
-				printf("aguia");
-			}
-			else{
-				printf("pomba");
-			}
-		}
-		else{
-			if(strcmp(classe,"onivoro")==0){
-				printf("homem");
-			}
-			else{
-				printf("vaca");
-			}
-		}
+	if(pal1 == "vertebrado" && pal2 == "ave" && pal3 == "carnivoro"){
+		printf("aguia\n");
 	}
-	else{
-		if(strcmp(tipo,"inseto")==0){
-			if(strcmp(classe,"hematofago")==0){
-				printf("pulga");
-			}
-			else{
-				printf("lagarta");
-			}
-		}
-		else{
-			if(strcmp(classe,"onivoro") == 0){
-				printf("minhoca");
-			}
-			else{
-				printf("sanguessuga");
-			}
-		}
+		/*
+	}
+	else if(pal1 == 'vertebrado' && pal2 == 'ave' && pal3 == 'onivoro'){
+		animal = 'pomba';
+	}
+	else if(pal1 == 'vertebrado' && pal2 == 'mamifero' && pal3 == 'onivoro'){
+		animal = 'homem';
+	}
+	else if(pal1 == 'vertebrado' && pal2 == 'mamifero' && pal3 == 'herbivoro'){
+		animal = 'vaca';
+	}
+	else if(pal1 == 'invertebrado' && pal2 == 'inseto' && pal3 == 'hematofago'){
+		animal = 'pulga';
+	}
+	else if(pal1 == 'invertebrado' && pal2 == 'inseto' && pal3 == 'herbivoro'){
+		animal = 'lagarta';
+	}
+	else if(pal1 == 'invertebrado' && pal2 == 'anelideo' && pal3 == 'hematofago'){
+		animal = 'sanguessuga';
+	}
+	else if(pal1 == 'invertebrado' && pal2 == 'anelideo' && pal3 == 'onivoro'){
+		animal = 'minhoca';
 	}
 	
+	printf("%s\n", animal);*/
 	
 	return 0;
+	
 }
